@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BD Budget Store</title>
+  <!-- custom stylesheet -->
   <link rel="stylesheet" href="./css/style.css" />
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -18,27 +19,31 @@
 </head>
 
 <body>
+  <!-- header start -->
   <header></header>
+
+  <!-- main start -->
+
   <main class="main">
-    <!-- <div class="input-group mb-3">
-      <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-    </div> -->
-    <div class="search-field">
-      <div class="search-box">
-        <input id="input-field" class="search-field" type="text" />
-        <button type="button" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false"
-          autocomplete="off" id="search-btn" onclick="loadProducts()">
-          Search
-        </button>
-      </div>
+    <!-- store title section -->
+    <h1 class="text-center font-bold">BD Budget <span class="text-danger">Store</span></h1>
+    <!-- search field  -->
+    <div class="search-box">
+      <input id="input-field" class="search-field" placeholder="Search Product" type="text" />
+      <button type="button" class="btn btn-success search-button" data-toggle="button" aria-pressed="false"
+        autocomplete="off" id="search-btn" onclick="loadProducts()">
+        Search
+      </button>
     </div>
+
+    <!-- all product display  -->
     <div class="row">
       <div class="col-md-9 col-lg-9 col-sm-7">
         <div id="all-products" class="">
-          <!-- blank space in first row bug  -->
         </div>
       </div>
+
+      <!-- cart  -->
       <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
         <div class="cart" id="my-cart">
           <table class="table">
@@ -84,12 +89,13 @@
             </tbody>
           </table>
           <div class="parces text-center">
-            <button class="btn btn-primary text-center">Buy Now</button>
+            <button class="btn btn-lg btn-success text-center">Buy Now</button>
           </div>
         </div>
       </div>
     </div>
   </main>
+  <!-- footer start  -->
   <footer></footer>
 
   <!-- add javascript  file  -->
